@@ -20,6 +20,7 @@ gdf = gdf.drop(columns=["lng", "lat"])
 # C:\Users\h2408\GitHub\Taipei-City-Dashboard\Taipei-City-Dashboard-FE\public\mapData
 save_path = "C:\\Users\\h2408\\GitHub\\Taipei-City-Dashboard\\Taipei-City-Dashboard-FE\\public\\mapData"
 #gdf.to_file(os.path.join(save_path, f"{table_name}.geojson"), driver="GeoJSON")
+#gdf.to_file(f"{table_name}.geojson", driver="GeoJSON")
 
 # key: col_name, name: display_name
 #[{"key": "name", "name": "名稱"}, {"key": "addr", "name": "地址"},{"key": "phone", "name": "電話"},{"key": "total_beds", "name": "總病床數"}]

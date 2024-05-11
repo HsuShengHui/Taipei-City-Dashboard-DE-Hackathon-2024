@@ -77,12 +77,12 @@ ready_data.to_csv(save_path, index=False)
 
 # # Load
 # # Load data to DB
-engine = create_engine(READY_DATA_DB_URI)
-save_geodataframe_to_postgresql(
-    engine,
-    gdata=ready_data,
-    load_behavior=LOAD_BEHAVIOR,
-    default_table=DEFAULT_TABLE,
-    history_table=HISTORY_TABLE,
-    geometry_type=GEOMETRY_TYPE,
-)
+# engine = create_engine(READY_DATA_DB_URI)
+# save_geodataframe_to_postgresql(
+#     engine,
+#     gdata=ready_data,
+#     load_behavior=LOAD_BEHAVIOR,
+#     default_table=DEFAULT_TABLE,
+#     history_table=HISTORY_TABLE,
+#     geometry_type=GEOMETRY_TYPE,
+# )
