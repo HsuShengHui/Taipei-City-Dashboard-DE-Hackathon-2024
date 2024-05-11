@@ -40,12 +40,12 @@ DROP SEQUENCE IF EXISTS public.heal_hospital_ogc_fid_seq;
     ALTER TABLE IF EXISTS public.heal_hospital OWNER to postgres;
     GRANT ALL ON TABLE public.heal_hospital TO postgres WITH GRANT OPTION;
 
-    -- create mtime trigger
-    CREATE TRIGGER heal_hospital_mtime
-        BEFORE INSERT OR UPDATE
-        ON public.heal_hospital
-        FOR EACH ROW
-        EXECUTE PROCEDURE public.trigger_set_timestamp();
+    -- -- create mtime trigger
+    -- CREATE TRIGGER heal_hospital_mtime
+    --     BEFORE INSERT OR UPDATE
+    --     ON public.heal_hospital
+    --     FOR EACH ROW
+    --     EXECUTE PROCEDURE public.trigger_set_timestamp();
 
 DROP TABLE IF EXISTS public.heal_hospital_history;
 DROP TRIGGER IF EXISTS heal_hospital_history_mtime ON public.heal_hospital_history;
@@ -89,9 +89,9 @@ DROP SEQUENCE IF EXISTS public.heal_hospital_history_ogc_fid_seq;
     ALTER TABLE IF EXISTS public.heal_hospital_history OWNER to postgres;
     GRANT ALL ON TABLE public.heal_hospital_history TO postgres WITH GRANT OPTION;
 
-    -- create mtime trigger
-    CREATE TRIGGER heal_hospital_history_mtime
-        BEFORE INSERT OR UPDATE
-        ON public.heal_hospital_history
-        FOR EACH ROW
-        EXECUTE PROCEDURE public.trigger_set_timestamp();
+    -- -- create mtime trigger
+    -- CREATE TRIGGER heal_hospital_history_mtime
+    --     BEFORE INSERT OR UPDATE
+    --     ON public.heal_hospital_history
+    --     FOR EACH ROW
+    --     EXECUTE PROCEDURE public.trigger_set_timestamp();

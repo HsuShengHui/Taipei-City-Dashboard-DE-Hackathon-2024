@@ -25,7 +25,7 @@ else:
 # Please ensure that the settings below match those in the backend Docker YAML.
 # If you make any modifications, update the following settings accordingly.
 USER_NAME = quote("postgres")
-PASSWORD = quote("your_password")  # must be modified
+PASSWORD = quote("a9a8a7a6")  # must be modified
 IP = "localhost"
 PORT = "5433"
 DATABASE_NAME = "dashboard"
